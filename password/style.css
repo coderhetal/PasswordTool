@@ -1,0 +1,219 @@
+/* style.css */
+
+/* Global styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main container */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background-image: linear-gradient(to top right, #7abb76, #cfd2d8);
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Password generator section */
+.generator {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px; /* Curved border */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.generator h1 {
+    color: #4caf50;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: #4caf50;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+div.password {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+div.password input {
+    flex: 1;
+    padding: 15px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+div.password button {
+    padding: 12px 24px;
+    margin-left: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+div.password button:hover {
+    background-color: #45a049;
+}
+
+div.range {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+div.range input[type="range"] {
+    flex: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 10px;
+}
+
+div.range input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+div.range span {
+    background-color: #ddd;
+    padding: 10px;
+    min-width: 30px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+div.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+div.options label {
+    display: flex;
+    align-items: center;
+    background-color: #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button.generate {
+    width: 100%;
+    padding: 15px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+button.generate:hover {
+    background-color: #45a049;
+}
+
+button.back-to-home {
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button.back-to-home:hover {
+    background-color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 10px;
+    }
+    .options {
+        flex-direction: column;
+        align-items: center;
+    }
+    .options button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .generator {
+        padding: 20px;
+    }
+    div.password input {
+        padding: 12px;
+    }
+    div.password button {
+        padding: 10px 20px;
+    }
+    div.range span {
+        padding: 8px;
+    }
+    div.options label {
+        padding: 12px;
+    }
+    button.generate,
+    button.back-to-home {
+        padding: 12px;
+    }
+}
