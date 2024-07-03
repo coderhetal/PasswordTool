@@ -65,4 +65,3 @@ If you would like to contribute to this project, please fork the repository and 
 
 ---
 
-This README provides a comprehensive guide to understanding, installing, and using your password tool project. Adjust the content as necessary to fit your specific needs and details.
